@@ -1,0 +1,246 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  color: #5c5c5c;
+  font-family: 'Lato', arial, sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  text-rendering: optimizeLegibility;
+}
+
+/*--- Layout ---*/
+.row {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+/*--- Header ---*/
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(images/Back_img.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+.main-text-box {
+  position: absolute;
+  width: 800px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+h1, h2, h3 {
+  font-weight: 350;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+}
+
+h1 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: papayawhip;
+  font-size: 220%;
+  word-spacing: 3px;
+}
+
+h2 {
+  font-size: 180%;
+  word-spacing: 2px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+h2:after {
+  display: block;
+  height: 1px;
+  background-color: orangered;
+  content: " ";
+  width: 100px;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+h3 {
+  font-size: 110%;
+  margin-bottom: 10px;
+}
+
+.logo {
+  height: 185px;
+  width: auto;
+  float: left;
+}
+
+.main-nav {
+  float: right;
+  list-style: none;
+  margin-top: 40px;
+}
+
+.main-nav li {
+  display: inline-block;
+  margin-left: 30px;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+  color: papayawhip;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 90%;
+  word-spacing: 3px;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+  padding: 10px 15px;
+  border-radius: 200px;
+  border-bottom: 1px solid #1b988e;
+  transition: border .2s, padding .2s;
+}
+
+/* --- Button ---*/
+.button:link,
+.button:visited {
+  display: inline-block;
+  padding: 10px 30px;
+  font-weight: 300;
+  text-decoration: none;
+  border-radius: 200px;
+  color: papayawhip;
+  transition: background-color .2s, color .2s, border .2s;
+}
+
+.btn-full:link,
+.btn-full:visited {
+  background-color: #1b988e;
+  border: 1px solid #1b988e;
+  margin-right: 3px;
+}
+
+.btn-trans:link,
+.btn-trans:visited {
+  border: 1px solid #1b988e;
+  color: #3fd6ca;
+}
+
+.button:hover,
+.button:active {
+  background-color: #136d66;
+}
+
+.btn-full:hover,
+.btn-full:active {
+  border: 1px solid #136d66;
+}
+
+.btn-trans:hover,
+.btn-trans:active {
+  border: 1px solid #136d66;
+  color: papayawhip;
+}
+
+/*--- section ---*/
+section {
+  padding: 50px 0;
+}
+
+/*--- icons ---*/
+ion-icon {
+  font-size: 300%;
+  --ionicon-stroke-width: 16px;
+  display: block;
+  color: cadetblue;
+}
+
+/*--- Paragraphs ---*/
+.features {
+  line-height: 145%;
+}
+
+.box {
+  padding: 1%;
+}
+
+.box p {
+  font-size: 90%;
+  line-height: 140%;
+}
+
+/*--- Login ---*/
+
+.login-form{
+    background: white;
+    height: 580px;
+    width: 360px;
+    padding: 80px 40px;
+    border-radius: 10px;
+    position: absolute;
+    left: 50%;
+    top: 55%;
+    transform: translate(-50%,-50%);
+}
+.login-form h4{
+    text-align: center;
+    font-size: 25px;
+    letter-spacing: 1px;
+    margin-bottom: 45px;
+    
+}
+
+.text-box{
+    border-bottom: 2px solid #969696;
+    position: relative;
+    margin: 30px 0;
+}
+.text-box input{
+    font-size: 20px;
+    color:#333333;
+    border: none;
+    width: 100%;
+    outline: none; 
+    background: none;
+    padding: 0 5px;
+}
+.login-btn{
+    display: block;
+    width: 100%;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    background: #3b3b5c;
+    color: papayawhip;
+    background-size: 200%;
+    outline: none;
+    cursor: pointer;
+    transition: .5s;
+}
+.login-btn:hover{
+    background: rgba(59, 59, 92, 0.86);
+    transition: .2s;
+}
+.bottom-text{
+    margin-top: 60px;
+    text-align: center;
+    font-size: 17px;
+}
+.bottom-text a:link,
+.bottom-text a:visited {
+  text-decoration: none;
+}
+/*--- Sign up ---*/
+
+.bottom-text-signup{
+    margin-top: 40px;
+    text-align: center;
+    font-size: 17px;
+}
+.bottom-text-signup a:link,
+.bottom-text-signup a:visited {
+  text-decoration: none;
+}
